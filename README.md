@@ -29,3 +29,4 @@ Privilégier l'anglais pour le nom de vos classes CSS
 ## Preview
 
 ![Preview desktop](preview_desktop.png)
+![Preview mobile](preview_mobile.png)
