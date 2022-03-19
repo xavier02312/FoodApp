@@ -2,7 +2,9 @@
 
 ## Spécifications
 
-Afin de faciliter le travail, copier ce dépôt sur votre Git.
+Afin de faciliter le travail, forket ce dépôt sur votre Git.
+
+L'utilisation de Bootstrap est demandé pour ce projet.
 
 #### Couleurs
 
