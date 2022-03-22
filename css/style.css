@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+
+:root {
+    --white: #ffffff;
+    --gray-light: #f5fbfc;
+    --gray-dark: #08090a;
+    --green: #35b8be;
+    --green-dark: #1b9097;
+    --green-light: #f5fbfc;
+    --blue-dark: #546285;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+/*bouton pour toute les class*/
+.btn-green {
+    text-decoration: none;
+    color: var(--white);
+    padding: 14px 24px;     /*marge interieur h/b. g/d*/
+    border-radius: 6px;     /*bord arrondie*/
+    background: var(--green) url('../images/button_wave.svg') no-repeat;
+}
+/*image por toute les class*/
+.picture {
+    width: 100%;
+    margin-top: 100px;
+}
+
+body {
+    color: var(--gray-dark);
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+/*texte color*/
+.green {
+    color: var(--green);
+}
+/*alert*/
+.alert,
+.menu-desktop {
+    display: none;
+}
+/*navigation*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+nav img {
+    width: 20%;
+}
+/*menu burger*/
+.menu-burger {
+    background-color: var(--green-light);
+    border-radius: 8px;
+    padding: 10px 10px 5px 10px;
+}
+.menu-burger svg {
+    width: 24px;
+}
+/*Header*/
+header,
+main section {
+    text-align: center;
+}
+header h1 {
+    font-size: 3rem;
+    font-weight: 700; /*épaisseur de police*/
+}
+header p {
+    font-size: 1.1rem;
+    line-height: 1.3rem; /*hauteur le ligne*/
+    font-weight: 300;
+    margin: 50px 0;
+    color: var(--blue-dark);
+}
