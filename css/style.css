@@ -69,15 +69,58 @@ nav img {
 header,
 main section {
     text-align: center;
+    padding: 50px 0;
 }
 header h1 {
     font-size: 3rem;
     font-weight: 700; /*épaisseur de police*/
 }
-header p {
+header p,
+main section p {
     font-size: 1.1rem;
     line-height: 1.3rem; /*hauteur le ligne*/
     font-weight: 300;
     margin: 50px 0;
+    color: var(--blue-dark);
+}
+/*main texte*/
+main section h2 {
+    font-size: 2.8rem;
+    color: var(--green);
+}
+/*first-child permet de ciblé le premier élément positioné en premier enfant de
+/* son parent*/
+main section:first-child {
+    background-color: var(--green-light);
+}
+/*last-child permet de cibler un élément positionné en dernier enfant de son parent*/
+main section:last-child p {
+    margin: 0;
+}
+main section:last-child h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;    /*ou*/
+    margin-top: 20px;       /*ou en dessous*/
+    /*margin: 20px 0 10px 0*/ 
+}
+/*footer*/
+footer {
+    background-color: var(--green-light);
+    padding: 20px;
+}
+footer p {
+    color: var(--green-dark);
+}
+footer ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    margin-top: 10px;
+}
+footer ul a {
+    text-decoration: none;
+    font-size: 0.8rem;
     color: var(--blue-dark);
 }
