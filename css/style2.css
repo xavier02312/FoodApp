@@ -1,0 +1,73 @@
+/*Permet de passer à partire de 1200px à cette feuille de style*/
+@media screen and (min-width: 1200px){
+    .container {
+        width: 60%;
+    }
+    /*alert*/
+    .alert {
+        display: block;
+        color: var(--white);
+        text-align: center;
+        background: var(--green) url("../images/banner_wave.svg") no-repeat;
+        padding: 15px 0;
+    }
+    /*Navigation*/
+    nav .menu-burger {
+        display: none;
+    }
+    nav .menu-desktop {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        list-style: none;
+    }
+    nav .menu-desktop a {
+        text-decoration: none;
+        color: var(--gray-dark);
+    }
+    /*Logo*/
+    nav img {
+        width: 10%;
+    }
+    /*Header*/
+                                    /*Le selecteur ">" permet de dire:*/
+    header,                         /*"prend le premier élément juste en dessous du parent"*/ 
+    main section:first-child > div,
+    main section:last-child section {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        text-align: left;
+        padding: 100px 0;
+    }
+    header h1 {
+        font-size: 4rem;
+    }
+    header img {
+        margin: 0 !important;   /*le fait de mêtre "!important" passe avant */
+                                /*la class .picture de l'autre feuille CSS*/
+    }
+    main section h2 {
+        font-size: 3.2rem;
+    }
+    main section:last-child section {
+        text-align: center;
+    }
+    .picture {
+        margin: 0;
+    }
+    /*footer*/
+    footer {
+        padding: 35px 0;
+    }
+    footer div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    footer div p {
+        margin: 0;
+        font-weight: bolder;
+    } 
+    
+}
